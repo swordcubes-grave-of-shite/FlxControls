@@ -245,7 +245,7 @@ abstract class FlxControls<TAction:EnumValue> implements IFlxInputManager
     
     public var lastActiveDevice(default, null) = FlxInputDevice.NONE;
     
-    final deviceActivity:Map<FlxInputDevice, Int> =
+    final deviceActivity:Map<FlxInputDevice, Float> =
         [ FlxInputDevice.GAMEPAD          => 0
         , FlxInputDevice.MOUSE            => 0
         , FlxInputDevice.KEYBOARD         => 0
