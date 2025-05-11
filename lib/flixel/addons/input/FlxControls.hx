@@ -639,7 +639,7 @@ abstract class FlxControls<TAction:EnumValue> implements IFlxInputManager
     {
         // Don't add input if it is a keyboard NONE input, otherwise
         // flixel will constantly fire it for some reason
-        if(input.compare(Keyboard(Lone(NONE))))
+        if(input == null || input.compare(Keyboard(Lone(NONE))))
             return;
 
         // See if this action already has this input
